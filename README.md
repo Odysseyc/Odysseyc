@@ -1,46 +1,129 @@
 # Adam Sabet
 
-**M.S. Electrical Engineering @ Stanford — Robotics & Control**
+**M.S. Electrical Engineering @ Stanford (Robotics & Autonomous Systems)** · B.S. Physics & Economics, Ohio State (4.0 GPA)
 
-Physics & Economics B.S. from Ohio State. I'm interested in robotics that adapt to real environments and do something genuinely useful for people — assistive robotics, healthcare, and autonomy that leaves the lab.
+I build robots that work outside the lab: autonomy, embedded systems, and hardware that does something useful for people.
+Right now that means a brain-controlled rover for assistive mobility.
 
-[LinkedIn](https://www.linkedin.com/in/adamsabet1/) · odyssey@stanford.edu
+[LinkedIn](https://www.linkedin.com/in/adamsabet1/) · odyssey@stanford.edu · Looking for Summer 2027 internships in robotics, autonomy, embedded and hardware
 
 ---
 
-## NASA Student Launch Initiative — Avionics Bay
+## 🧠 Brain-Controlled Rover · Stanford ARMLab
 
-*Buckeye Space Launch Initiative, The Ohio State University · Aug 2023 – May 2026*
+*Graduate Researcher · Oct 2026 – Present* · [Code](https://github.com/Odysseyc/eeg-rover)
+
+<p align="center">
+  <img src="assets/eeg-rover.jpg" alt="Driving the rover with an Xbox controller in the lab" width="38%">
+  <img src="assets/eeg-accuracy.png" alt="Per-subject EEG decoding accuracy for two classifiers" width="58%">
+</p>
+<p align="center">
+  <img src="assets/eeg-rover-diagram.png" alt="System diagram: EEG classifier and shared autonomy, or an Xbox controller, send velocity commands to the rover or the MuJoCo sim" width="90%">
+</p>
+
+Driving a 1:10-scale rover with a non-invasive brain-computer interface. EEG commands are slow and noisy, so the goal is
+**shared autonomy**: the person chooses where to go, and the robot keeps it safe.
+
+- Rewrote the rover's onboard driver (ROS, Jetson Orin Nano, VESC): fixed reversed steering and a reverse-throttle bug, and added ramping, a 0.5 s safety watchdog, and Xbox control with an E-stop
+- Bridged ROS 2 on the laptop to ROS 1 on the rover over Wi-Fi, with live onboard video
+- Built a MuJoCo simulation with lidar and camera that takes the same commands as the real rover
+- EEG decoding on BCI Competition IV 2a (4 classes, cross-session): **67.1%** vs. 25% chance, up to 86% for the best subject
+
+`ROS 1 / ROS 2` `Python` `MuJoCo` `NVIDIA Jetson` `scikit-learn` `pyRiemann`
+
+---
+
+## 🤖 Autonomous TurtleBot Navigation & Exploration · Stanford CS 237A
+
+*Sept – Nov 2026* · [Code](https://github.com/Odysseyc/turtlebot-autonomy)
+
+<p align="center">
+  <img src="assets/turtlebot-diagram.png" alt="Autonomy stack: frontier explorer sends goals to the navigator (A* planner, spline smoothing, tracking control), which drives the TurtleBot3" width="90%">
+</p>
+
+A full autonomy stack that explores an unknown environment on its own, tested in Gazebo and then run on a real TurtleBot3.
+
+- Navigation: A* on the occupancy grid, cubic-spline smoothing, and a differential-flatness tracking controller
+- Frontier exploration that picks the next goal from the live map and recovers from failed goals
+- Stops for 5 s at stop signs seen by an onboard detector, without re-triggering on the same sign
+
+`ROS 2` `Python` `Gazebo` `RViz` `TurtleBot3`
+
+---
+
+## 🍳 Karl's Kitchen: Interactive Microwave Game · Stanford ME 218A
+
+*Integration & Hardware Lead, team of 4 · Oct – Nov 2026* · [Code](https://github.com/Odysseyc/ME218A-2026-Project)
+
+<p align="center">
+  <img src="assets/karls-kitchen.jpg" alt="The finished game: a microwave-style box with a spinning plate, LEDs and an LED-matrix timer" width="70%">
+</p>
+
+A microwave-themed arcade game: turn a knob to spin the plate toward whichever LED lights up, and fill the cooking meter
+before time runs out to win a treat.
+
+- Designed the KiCad schematic around a PIC32: Hall-effect sensors, shift-register LED chain, SPI LED matrices, and two DC gearmotors on an H-bridge
+- Wrote the event-driven game state machine in C, plus a desktop simulator to test it without hardware
+- Designed the laser-cut and 3D-printed enclosure and treat dispenser, and merged the team's code into the final game
+
+`C` `PIC32` `KiCad` `PWM` `SPI` `Laser cutting` `3D printing`
+
+---
+
+## 🚀 NASA Student Launch Initiative · Ohio State
+
+*Deputy Project Manager, previously Avionics · Aug 2023 – May 2026* · [Simulations](https://github.com/saividyud/NASA_25-26_Rocket_Simulations) · [bsli.space](https://www.bsli.space/)
 
 <p align="center">
   <img src="assets/avionics-bay-cad.png" alt="Avionics bay CAD model" width="45%">
-  <img src="assets/launch-vehicle.png" alt="Completed launch vehicle" width="45%">
+  <img src="assets/launch-vehicle.png" alt="The team with the completed launch vehicle" width="45%">
 </p>
 
-I designed and prototyped this avionics bay in CAD, incorporating feedback from mentors and alumni to optimize component layout and structural integrity. I machined its components on mills, lathes, and belt sanders to meet flight-readiness tolerances, and worked across subsystems to integrate the bay with our payload and recovery systems.
+- Designed the avionics bay in CAD and Altium and machined its parts on mills and lathes to flight tolerances
+- As Deputy PM, led systems integration across avionics, recovery and structures, and directed full-vehicle testing
+- Developed OpenRocket vehicle models and ran Monte Carlo flight simulations under wind and weather uncertainty
+- Defended our design and safety decisions to NASA engineers in formal reviews; the team consistently ranked in the top 20 of 80+ universities
 
-As Deputy Project Manager, I later led systems integration and testing across the full vehicle — coordinating avionics, recovery, and structures sub-teams, directing full-vehicle testing and hardware verification, and defending our engineering and safety decisions directly to NASA engineers in formal design reviews. Our team consistently ranked in the top 20 of 80+ universities nationally.
-
-**Skills:** CAD (SolidWorks, Onshape) · CNC machining · PCB layout (Altium) · wiring & circuit diagrams · systems integration · hardware verification & validation
-
-🔗 [bsli.space](https://www.bsli.space/)
-
----
-
-## 3-DOF Robotic Arm — Independent Learning Project
-
-*Jun 2026 – Present*
-
-An ongoing project to build hands-on fluency in robotic manipulation ahead of my M.S. I worked through the forward and inverse kinematics from first principles before implementing anything, then used AI-assisted coding to implement and iterate on a working prototype in simulation — a deliberate choice to move faster on implementation while staying responsible for understanding and verifying the underlying math myself.
-
-Next steps: extending to physical hardware, and relying less on AI assistance as my independent implementation skills solidify.
-
-**Skills:** forward/inverse kinematics · Python · embedded control · simulation
+`SolidWorks` `Onshape` `Altium` `CNC machining` `Raspberry Pi` `OpenRocket`
 
 ---
 
-## Currently
+## 🦾 3-DOF Robotic Arm · Independent Project
 
-- Building depth in controls, embedded systems, and robot learning
-- Coursework: robotic autonomy, machine learning, decision making under uncertainty, state estimation
-- Open to research and internship collaborations in robotics, autonomy, and embedded systems
+*Jun 2026 – Present* · [Code](https://github.com/Odysseyc/3dof-robotic-arm)
+
+<p align="center">
+  <img src="assets/arm-motion.gif" alt="Simulated arm tracing a Cartesian path" width="40%">
+</p>
+
+Learning manipulation from first principles. I derived the forward and inverse kinematics by hand, then implemented them with
+AI-assisted coding and verified the math myself.
+
+- Analytical inverse kinematics, trajectory generation, and PID control, validated in PyBullet and visualized in RViz
+- Arduino firmware that drives the servos from serial joint commands; physical assembly is next
+
+`Python` `ROS 2` `PyBullet` `URDF` `Arduino`
+
+---
+
+## 🪨 Tin-Tungsten Deposit Prediction · Ohio State Big Data Analytics in Physics
+
+*Aug – Dec 2025* · [Code](https://github.com/Odysseyc/Tin-Tungsten-Prediction)
+
+<p align="center">
+  <img src="assets/sn-w-roc.png" alt="ROC curves: Random Forest AUC 0.93, SVM AUC 0.92" width="45%">
+</p>
+
+Random Forest and SVM classifiers that map where tin-tungsten deposits are likely in Tasmania from geophysical survey data.
+The Random Forest reached **0.93 AUC**, and 43% of the cells it flagged were real deposits when only 4% of cells contain one.
+
+`Python` `scikit-learn` `GeoPandas` `imbalanced-learn`
+
+---
+
+## Skills
+
+- **Robotics:** ROS / ROS 2, Gazebo, MuJoCo, PyBullet, RViz, motion planning, trajectory tracking, kinematics, PID control
+- **Embedded & electrical:** PIC32, NVIDIA Jetson, Arduino, Raspberry Pi, PWM motor control, H-bridges, SPI, KiCad, Altium
+- **Mechanical:** SolidWorks, Onshape, CNC mill and lathe, laser cutting, 3D printing
+- **Software & ML:** Python, C, C++, MATLAB, Git, Linux, Docker, NumPy, scikit-learn, PyTorch
