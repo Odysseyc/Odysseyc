@@ -9,12 +9,14 @@ Right now that means a brain-controlled rover for assistive mobility.
 
 ---
 
-## 🧠 Brain-Controlled Rover · Stanford ARMLab
+## Brain-Controlled Rover · Stanford ARMLab
 
 *Graduate Researcher · Oct 2026 – Present* · [Code](https://github.com/Odysseyc/eeg-rover)
 
 <p align="center">
   <img src="assets/eeg-rover.jpg" alt="Driving the rover with an Xbox controller in the lab" width="38%">
+</p>
+<p align="center">
   <img src="assets/eeg-accuracy.png" alt="Per-subject EEG decoding accuracy for two classifiers" width="58%">
 </p>
 <p align="center">
@@ -33,7 +35,7 @@ Driving a 1:10-scale rover with a non-invasive brain-computer interface. EEG com
 
 ---
 
-## 🤖 Autonomous TurtleBot Navigation & Exploration · Stanford CS 237A
+## Autonomous TurtleBot Navigation & Exploration · Stanford CS 237A
 
 *Sept – Nov 2026* · [Code](https://github.com/Odysseyc/turtlebot-autonomy)
 
@@ -51,7 +53,7 @@ A full autonomy stack that explores an unknown environment on its own, tested in
 
 ---
 
-## 🍳 Karl's Kitchen: Interactive Microwave Game · Stanford ME 218A
+## Karl's Kitchen: Interactive Microwave Game · Stanford ME 218A
 
 *Integration & Hardware Lead, team of 4 · Oct – Nov 2026* · [Code](https://github.com/Odysseyc/ME218A-2026-Project)
 
@@ -70,12 +72,14 @@ before time runs out to win a treat.
 
 ---
 
-## 🚀 NASA Student Launch Initiative · Ohio State
+## NASA Student Launch Initiative · Ohio State
 
 *Deputy Project Manager, previously Avionics · Aug 2023 – May 2026* · [Simulations](https://github.com/saividyud/NASA_25-26_Rocket_Simulations) · [bsli.space](https://www.bsli.space/)
 
 <p align="center">
   <img src="assets/avionics-bay-cad.png" alt="Avionics bay CAD model" width="45%">
+</p>
+<p align="center">
   <img src="assets/launch-vehicle.png" alt="The team with the completed launch vehicle" width="45%">
 </p>
 
@@ -88,7 +92,7 @@ before time runs out to win a treat.
 
 ---
 
-## 🦾 3-DOF Robotic Arm · Independent Project
+## 3-DOF Robotic Arm · Independent Project
 
 *Jun 2026 – Present* · [Code](https://github.com/Odysseyc/3dof-robotic-arm)
 
@@ -106,7 +110,7 @@ AI-assisted coding and verified the math myself.
 
 ---
 
-## 🪨 Tin-Tungsten Deposit Prediction · Ohio State Big Data Analytics in Physics
+## Tin-Tungsten Deposit Prediction · Ohio State Big Data Analytics in Physics
 
 *Aug – Dec 2025* · [Code](https://github.com/Odysseyc/Tin-Tungsten-Prediction)
 
