@@ -13,10 +13,9 @@ Right now that means a brain-controlled rover for assistive mobility.
 
 *Graduate Researcher · Oct 2026 – Present* · [Code](https://github.com/Odysseyc/eeg-rover)
 
-
-
 https://github.com/user-attachments/assets/1781b58b-0e76-4f36-8366-f1e6c216e170
-Driving the rover with an Xbox controller in the lab.
+
+<p align="center"><em>Driving the rover with an Xbox controller in the lab.</em></p> <p align="center"> <img src="assets/eeg-accuracy.png" alt="Per-subject EEG decoding accuracy for two classifiers" width="58%"> </p> <p align="center"> <img src="assets/eeg-rover-diagram.png" alt="System diagram: EEG classifier and shared autonomy, or an Xbox controller, send velocity commands to the rover or the MuJoCo sim" width="90%"> </p>
 
 </p>
 <p align="center">
@@ -60,10 +59,9 @@ A full autonomy stack that explores an unknown environment on its own, tested in
 
 *Integration & Hardware Lead, team of 4 · Oct – Nov 2026* · [Code](https://github.com/Odysseyc/ME218A-2026-Project)
 
-
-
 https://github.com/user-attachments/assets/50c30bc6-8d2b-4f78-b6f5-6b796023443e
-The finished game: a microwave-style box with a spinning plate, LEDs and an LED-matrix timer.
+
+<p align="center"><em>The finished game: a microwave-style box with a spinning plate, LEDs and an LED-matrix timer.</em></p>
 
 A microwave-themed arcade game: turn a knob to spin the plate toward whichever LED lights up, and fill the cooking meter
 before time runs out to win a treat.
