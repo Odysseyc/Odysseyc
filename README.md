@@ -13,9 +13,7 @@ Right now that means a brain-controlled rover for assistive mobility.
 
 *Graduate Researcher · Oct 2026 – Present* · [Code](https://github.com/Odysseyc/eeg-rover)
 
-https://github.com/user-attachments/assets/1781b58b-0e76-4f36-8366-f1e6c216e170
-
-<p align="center"><em>Driving the rover with an Xbox controller in the lab.</em></p> <p align="center"> <img src="assets/eeg-accuracy.png" alt="Per-subject EEG decoding accuracy for two classifiers" width="58%"> </p> <p align="center"> <img src="assets/eeg-rover-diagram.png" alt="System diagram: EEG classifier and shared autonomy, or an Xbox controller, send velocity commands to the rover or the MuJoCo sim" width="90%"> </p>
+<div align="center"> <video src="https://github.com/user-attachments/assets/1781b58b-0e76-4f36-8366-f1e6c216e170" width="40%" controls muted></video> </div> <p align="center"><em>Driving the rover with an Xbox controller in the lab.</em></p> <p align="center"> <img src="assets/eeg-accuracy.png" alt="Per-subject EEG decoding accuracy for two classifiers" width="58%"> </p> <p align="center"> <img src="assets/eeg-rover-diagram.png" alt="System diagram: EEG classifier and shared autonomy, or an Xbox controller, send velocity commands to the rover or the MuJoCo sim" width="90%"> </p>
 
 Driving a 1:10-scale rover with a non-invasive brain-computer interface. EEG commands are slow and noisy, so the goal is
 **shared autonomy**: the person chooses where to go, and the robot keeps it safe.
